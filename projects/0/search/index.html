@@ -6,14 +6,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
+        html,
         body {
             font-family: Arial, sans-serif;
+            height: 100%;
+            width: 100%;
+            text-align: center;
         }
 
         .header {
             text-align: right;
             padding: 15px;
             font-size: 13px;
+        }
+
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            text-align: center;
         }
 
         a:link,
@@ -46,30 +59,20 @@
 
         input[type="text"]:hover {
             box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
-            border-color: rgba(223,225,229,0);
-        }
-
-        input[type="text"]:focus {
-            box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
-            border-color: rgba(223,225,229,0);
-            border: 1px solid #dfe1e5;
+            border-color: rgba(223, 225, 229, 0);
         }
 
         img[id="logo"] {
             height: 92px;
-        }
-
-        .google #google_logo {
-            text-align: center;
-            display: block;
+            margin: 15px;
         }
     </style>
 </head>
 
 <body>
 
+    <!-- Header -->
     <div class="container-fluid">
-        <!-- Header -->
         <div class="header">
             <a href="images">Images</a>
             <a href="advanced">Advanced Search</a>
@@ -78,27 +81,20 @@
     </div>
 
     <div class="container">
-        <!-- Logo -->
-        <div class="d-flex justify-content-center">
+        <div class="vertical-center">
+
+            <!-- Logo -->
             <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
                 alt="Google Logo" id="logo">
-        </div>
 
-        <!-- Form -->
-        <div class="d-flex justify-content-center">
+            <!-- Form -->
             <form action="https://www.google.com/search">
-                <p><input type="text" name="q"></p>
-        </div>
-
-        <div class="d-flex justify-content-center">
-            <p>
+                <input type="text" name="q">
                 <input type="submit" value="Google Search">
-                <input type="submit" value="I'm Feeling Lucky">
-            </p>
             </form>
         </div>
-
     </div>
 
 </body>
+
 </html>

@@ -1,10 +1,6 @@
+/* General */
 body {
     font-family: Arial, sans-serif;
-}
-
-a {
-    margin-top: 8px;
-    text-decoration: none;
 }
 
 a:link,
@@ -17,32 +13,17 @@ a:visited {
     text-align: right;
     padding: 15px;
     font-size: 13px;
+    text-decoration: none;
 }
 
+/* Default search Google Logo */
 #googleimg {
     margin-top: 10%;
     height: 92px;
 }
 
-input {
-    background-color: #f8f9fa;
-    border: #f8f9fa;
-    font-size: 14px;
-    height: 36px;
-    border-radius: 4px;
-    margin: 11px 4px;
-    padding: 0 16px;
-}
-
-input:hover {
-    border: 1px solid #dadce0;
-}
-
-input[type="submit"] {
-    font-size: 14px;
-}
-
-input[type="text"] {
+/* Search textarea */
+#search-text {
     width: 582px;
     height: 44px;
     border-radius: 24px;
@@ -51,16 +32,15 @@ input[type="text"] {
     margin: 20px;
     outline: 0;
     padding: 0 50px;
-
 }
 
-input[type="text"]:hover,
+#search-text:hover,
 :focus {
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
     border-color: rgba(223, 225, 229, 0);
 }
 
-#search-logo {
+#search-icon {
     padding-left: 30px;
     position: absolute;
     margin-bottom: 10px;
@@ -71,6 +51,22 @@ input[type="text"]:hover,
     font-size: 22px;
 }
 
+/* Search Buttons */
+#search-button {
+    background-color: #f8f9fa;
+    border: #f8f9fa;
+    font-size: 14px;
+    height: 36px;
+    border-radius: 4px;
+    margin: 11px 4px;
+    padding: 0 16px;
+}
+
+#search-button:hover {
+    border: 1px solid #dadce0;
+}
+
+/* Advanced */
 #googlemini {
     height: 24px;
     text-align: left;

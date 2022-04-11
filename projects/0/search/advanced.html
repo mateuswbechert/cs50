@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="container-fluid">
+
+        <div class="header">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+                alt="Google Mini Logo" id="googlemini">
+            <a href="index.html">Google Search</a>
+            <a href="images.html">Images</a>
+            <a href="https://accounts.google.com/"><button class="btn btn-primary">Login</button></a>
+        </div>
+
+        <h3 id="advanced-header" class="advanced">Advanced Search</h3>
+        <div class="advanced-row"></div>
+
+        <div class="advanced">
+            <div class="col-6">
+                <div>
+                    Find pages with...
+                </div>
+                <div>
+                    To do this in the search box.
+                </div>
+            </div>
+            <form action="https://www.google.com/search">
+
+                <div>all these words:<input type="text" name="q"></div>
+                <div>this exact word or phrase:<input type="text" name="q"></div>
+                <div>any of these words:<input type="text" name="q"></div>
+                <div>none of these words:<input type="text" name="q"></div>
+
+                <div>
+                    <input type="submit" class="btn btn-primary" value="Advanced Search">
+                </div>
+
+                <input type="hidden" name="tbm" value="isch">
+            </form>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

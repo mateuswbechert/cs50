@@ -51,16 +51,17 @@ input[type="text"] {
     margin: 20px;
     outline: 0;
     padding: 0 50px;
-    
+
 }
 
-input[type="text"]:hover, :focus {
+input[type="text"]:hover,
+:focus {
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
     border-color: rgba(223, 225, 229, 0);
 }
 
 #search-logo {
-    padding-left:30px;
+    padding-left: 30px;
     position: absolute;
     margin-bottom: 10px;
     min-width: 40px;
@@ -68,4 +69,23 @@ input[type="text"]:hover, :focus {
     padding: 0 30px;
     color: gray;
     font-size: 22px;
+}
+
+#googlemini {
+    height: 24px;
+    text-align: left;
+}
+
+#advanced-header {
+    color: #d93025;
+    font-size: 20px;
+}
+
+.advanced-row {
+    border-bottom: 1px solid #ebebeb;
+    margin: 20px;
+}
+
+.advanced {
+    margin: 0 60px;
 }

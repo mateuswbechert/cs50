@@ -13,55 +13,95 @@
     <!-- Header -->
     <div class="container-fluid">
 
-        <div class="header">
-            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
-                alt="Google Mini Logo" id="googlemini">
-            <a href="index.html">Google Search</a>
-            <a href="images.html">Images</a>
-            <a href="https://accounts.google.com/"><button class="btn btn-primary">Login</button></a>
+
+        <div class="row justify-content-between" id="header-advanced">
+            <div class="col-4">
+                <a href="index.html" id="googlemini-a"><img
+                        src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+                        alt="Google Mini Logo" id="googlemini"></a>
+            </div>
+            <div class="col-auto">
+                <a href="index.html" id="header-a">Google Search</a>
+                <a href="images.html" id="header-a">Images</a>
+                <a href="https://accounts.google.com/" id="header-a"><button class="btn btn-primary">Login</button></a>
+            </div>
         </div>
+
 
         <h3 id="advanced-header" class="advanced">Advanced Search</h3>
         <div class="advanced-row"></div>
 
         <div class="advanced">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6" id="find-pages-text">
                     Find pages with...
                 </div>
-                <div class="col-6">
+                <div class="col-6" id="todo-column-header">
                     To do this in the search box.
                 </div>
             </div>
-
-            <form action="https://www.google.com/search">
-                <div class="row">
-                    <div class="col-6">all these words:<input type="text" name="q"></div>
-                    <div class="col-6">Type the important words: tri-colour rat terrier
+            <br>
+            <div class="form">
+                <form action="https://www.google.com/search">
+                    <div class="form-group row">
+                        <label class="col-form-label col-2">
+                            all these words:
+                        </label>
+                        <div class="col">
+                            <input type="text" name="as_q" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            Type the important words: <span id="span-monospace">tri-colour rat terrier</span>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-6">this exact word or phrase:<input type="text" name="q"></div>
-                    <div class="col-6">Put exact words in quotes: "rat terrier"
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">any of these words:<input type="text" name="q"></div>
-                    <div class="col-6">Type OR between all the words you want: miniature OR standard
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">none of these words:<input type="text" name="q"></div>
-                    <div class="col-6">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</div>
-                </div>
 
-                <div>
-                    <input type="submit" class="btn btn-primary" value="Advanced Search">
-                </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-2">
+                            this exact word or phrase:
+                        </label>
+                        <div class="col">
+                            <input type="text" name="as_epq" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            Put exact words in quotes: <span id="span-monospace">"rat terrier"</span>
+                        </div>
+                    </div>
 
-                <input type="hidden" name="tbm" value="isch">
-            </form>
+                    <div class="form-group row">
+                        <label class="col-form-label col-2">
+                            any of these words:
+                        </label>
+                        <div class="col">
+                            <input type="text" name="as_oq" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            Type OR between all the words you want: <span id="span-monospace">miniature OR
+                                standard</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-2">
+                            none of these words:
+                        </label>
+                        <div class="col">
+                            <input type="text" name="as_eq" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            Put a minus sign just before words that you don't want: <span id="span-monospace">-rodent,
+                                -"Jack
+                                Russell"</span>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <input type="submit" class="btn btn-primary" value="Advanced Search">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
         </div>
 
     </div>
